@@ -1,0 +1,48 @@
+<!DOCTYPE html>  
+<html>
+<head>
+<meta charset="utf-8">   
+</head>
+<body>
+<div style="font-size:12px;"> 
+    <script>
+	
+		var l1_m_koz, l2_m_koz;
+    do {
+         l1_m_koz = prompt("Podaj pierwszą liczbę z przedziału <20;60>", "");
+    } while (l1_m_koz < 20 || l1_m_koz > 60 || isNaN(l1_m_koz));
+
+    do {
+        l2_m_koz = prompt("Podaj drugą liczbę z przedziału <20;60>", "");
+    } while (l2_m_koz < 20 || l2_m_koz > 60 || isNaN(l2_m_koz));
+        
+		var pocz_koz;
+    do {
+        pocz_koz = prompt("Podaj początkowy rozmiar czcionki: ", "");
+    } while (isNaN(pocz_koz) || pocz_koz <= 0);
+
+    var tekst_koz;
+    do {
+        tekst_koz = prompt("Podaj tekst, który mam wypisać: ", "");
+    } while (!tekst_koz || tekst_koz.trim() === "");
+
+		l1_m_koz = Number(l1_m_koz);
+		l2_m_koz = Number(l2_m_koz);
+		pocz_koz = Number(pocz_koz);
+
+		if (l1_m_koz < l2_m_koz) {
+        for (let i = pocz_koz; i <= 100; i += 5) 
+    {
+        document.write("<p style='font-size:" + i + "px'>" + tekst_koz + "</p>");
+    }
+    }else if (l2_m_koz < l1_m_koz) {
+        for (let i = pocz_koz; i >= 5; i -= 5) {
+        document.write("<p style='font-size:" + i + "px'>" + tekst_koz + "</p>");
+    }
+    } else {
+        document.write("<p style='font-size:" + pocz_koz + "px'>" + tekst_koz + "</p>");
+    }  
+    </script>
+</div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>   
+<head>    
+<meta charset="utf-8">   
+<script language="JavaScript">
+        function okno_zamknij() 
+        {window.close()}
+    </script>
+</head>  
+<body> 
+	<script language="JavaScript"> 
+		do{
+		var r=prompt("Podaj promien koła wktorym bedzie obliczna ilosc punktow kratowych:","");
+		var r_koz=parseFloat(r); 
+    }while (isNaN(r_koz) || r_koz < 0)
+		var n=0;
+		let granica = Math.ceil(r_koz);
+		for (let i_koz = -granica; i_koz <= granica; i_koz=i_koz+1) 
+    {
+        for (let j_koz = -granica; j_koz <= granica; j_koz=j_koz+1) 
+    {
+        if ((i_koz**2 + j_koz**2 <= r_koz**2) ) 
+        n++;
+    }
+    }
+		document.write("Ilość punktów kratowych: "+ n)
+
+</script>
+<br>
+<button onclick="okno_zamknij()">zamknij</button>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<html>
+<body>
+<textarea cols="60" rows="35">
+<!DOCTYPE html>   
+<head>
+<title> Sprawdzenie danych Koźlicki </title>    
+<meta charset="utf-8">   
+</head>  
+<body> 
+<div style="font-size:15px;"> 
+    <script language="JavaScript"> 
+
+		var a_koz=prompt("wysokość prostokąta=","");
+		var b_koz=prompt("szerokość prostokąta=","");
+		for(var i=0; i<b_koz;i++)
+    {
+        document.write("*");
+    }
+		var wiersz_koz="*"; 
+		for ( var i=0; i<(b_koz-2); i++) 
+    { 
+        wiersz_koz=wiersz_koz+"&nbsp&nbsp"; 
+    } 
+		wiersz_koz=wiersz_koz+"*"; 
+		for(var i=0; i<a_koz-2;i++)
+    {
+        document.write("<br>"+wiersz_koz);
+    }
+		document.write("<br>");
+		for(var i=0; i<b_koz;i++)
+    {
+        document.write("*");
+    }
+    </script> 
+</div> 
+</body> 
+</html>
+</textarea>
+</body>
+</html>

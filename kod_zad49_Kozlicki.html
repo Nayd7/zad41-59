@@ -1,0 +1,33 @@
+<html>
+<body>
+<textarea cols="60" rows="32">
+<html>
+<head>
+    <script language="JavaScript">
+        function okno_zamknij() 
+        {window.close()}
+    </script>
+</head>
+<body>
+<div style="color:red;font-size:20px">
+    <script language="JavaScript">
+            var silnia_koz=1;
+            var n_koz=prompt("podaj liczbe z ktorej obliczy sie silnie: ");
+            if(n_koz > 0)
+            {
+		        for ( var i_koz=1; i_koz<=n_koz; i_koz++)
+ {
+                    silnia_koz=silnia_koz*i_koz;
+                }
+			    document.write("silnia z "+ n_koz +" = " + silnia_koz);
+            }else
+            document.write("silnia z "+ n_koz +" = 1");
+    </script>
+</div>
+<br>
+<button onclick="okno_zamknij()">zamknij</button>
+</body>
+</html>
+</textarea>
+</body>
+</html>

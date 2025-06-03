@@ -1,0 +1,42 @@
+<html>
+<body>
+<textarea cols="60" rows="37">
+<!DOCTYPE html>   
+<head>      
+<meta charset="utf-8">   
+</head>  
+<body> 
+<div style="font-size:15px;"> 
+    <script language="JavaScript">
+		var imie=prompt("podaj imie: ","");
+		var nazw=prompt("podaj nazwisko: ","");
+    
+		var a_koz=(imie.length % 4)+5;
+		var b_koz=(nazw.length % 6)+20;
+		for(var i=0; i<b_koz;i++)
+    {
+        document.write("*");
+    }
+
+		for(var i=0; i<a_koz-2;i++)
+    {
+        document.write("<br>*");
+        for(var j=0; j<b_koz-2;j++)
+    {
+            document.write("&nbsp;&nbsp;");
+    }
+        document.write("*");
+    }
+		document.write("<br>");
+
+		for(var i=0; i<b_koz;i++)
+    {
+        document.write("*");
+    }
+    </script> 
+</div> 
+</body> 
+</html>
+</textarea>
+</body>
+</html>
